@@ -1,3 +1,7 @@
+/**
+ * 메인 페이지(pages/MainPage/index.js)에 사용되는 내비게이션 컴포넌트를 생성하고 스타일링하는 파일입니다.
+ */
+
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -12,8 +16,6 @@ const Nav = () => {
   const navigate = useNavigate()
   const auth = getAuth()
   const provider = new GoogleAuthProvider()
-  // const initialUserData = localStorage.getItem("userData") ? JSON.parse(localStorage.getItem("userData")) : {}
-  // const [userData, setUserData] = useState(initialUserData)
   const dispatch = useDispatch()
   const userData = useSelector(state => state.user)
 
@@ -40,6 +42,7 @@ const Nav = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   
+    // 컴포넌트를 사용하지 않게 되면 등록된 이벤트 리스너를 제거합니다.
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
@@ -53,8 +56,6 @@ const Nav = () => {
   const handleAuth = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
-        // setUserData(result.user)
-        // localStorage.setItem('userData', JSON.stringify(result.user))
         dispatch(setUser({
           id: result.user.uid,
           email: result.user.email,
@@ -69,8 +70,6 @@ const Nav = () => {
 
   const handleLogOut = () => {
     signOut(auth).then(() => {
-      // setUserData({})
-      // localStorage.removeItem('userData')
       dispatch(removeUser())
       navigate("/")
     }).catch((error) => {
