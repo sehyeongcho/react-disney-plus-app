@@ -1,0 +1,32 @@
+div.detail-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: white;
+}
+
+div.detail-contents h1 {
+  font-size: 40px;
+  margin: 0 0 16px 0;
+}
+
+div.detail-contents p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+div.detail-contents ul {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+}
+
+div.detail-contents ul li::after {
+  content: "·";
+  margin: 0 10px;
+}
+
+div.detail-contents ul li:last-child::after {
+  content: "";
+}
