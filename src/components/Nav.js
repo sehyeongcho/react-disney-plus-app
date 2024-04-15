@@ -1,5 +1,5 @@
 /**
- * 메인 페이지(pages/MainPage/index.js)에 사용되는 내비게이션 컴포넌트를 생성하고 스타일링하는 파일입니다.
+ * 모든 페이지에서 사용되는 내비게이션 컴포넌트를 생성하고 스타일링하는 파일입니다.
  */
 
 import { GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'
