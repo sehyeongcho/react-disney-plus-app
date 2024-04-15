@@ -65,6 +65,7 @@ const Row = ({ title, id, fetchUrl }) => {
           }
         }}
         initialSlide="1"
+        speed={2400}
       >
         <Content id={id}>
           {movies.map(movie => (
