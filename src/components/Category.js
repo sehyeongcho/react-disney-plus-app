@@ -1,3 +1,7 @@
+/**
+ * 메인 페이지에서 사용되는 영화 카테고리 컴포넌트를 생성하고 스타일링하는 파일입니다. (Disney, Marvel, Pixar, Starwars, National Geographic)
+ */
+
 import React from 'react'
 import styled from 'styled-components'
 

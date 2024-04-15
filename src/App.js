@@ -1,3 +1,7 @@
+/**
+ * App 컴포넌트 파일입니다. 여러 컴포넌트를 생성하고 route를 정의합니다.
+ */
+
 import './App.css';
 import Nav from './components/Nav';
 import { Outlet, Route, Routes } from 'react-router-dom';

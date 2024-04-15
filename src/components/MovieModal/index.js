@@ -1,3 +1,7 @@
+/**
+ * 영화 자세히 보기 클릭 시, 영화 이미지, 개봉일, 제목, 평점, 줄거리 등의 세부 정보를 담은 모달을 생성하는 파일입니다.
+ */
+
 import React, { useRef } from 'react'
 import './MovieModal.css'
 import useOnClickOutside from '../../hooks/useOnClickOutside'

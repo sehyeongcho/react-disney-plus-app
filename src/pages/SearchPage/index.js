@@ -1,3 +1,7 @@
+/**
+ * 사용자가 검색한 영화 목록을 보여주는 검색 페이지 파일입니다.
+ */
+
 import axios from '../../api/axios'
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'

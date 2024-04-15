@@ -1,3 +1,7 @@
+/**
+ * 메인 페이지에서 사용되는 영화 나열을 위한 컴포넌트를 생성하고 스타일링하는 파일입니다. (Trending Now, Top Rated, Action Movies, Comedy Movies)
+ */
+
 import axios from '../api/axios'
 import React, { useCallback, useEffect, useState } from 'react'
 import './Row.css'
