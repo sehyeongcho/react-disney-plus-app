@@ -1,3 +1,7 @@
+/**
+ * 영화 배너, 카테고리, 다양한 기준에 따른 영화 목록 등을 보여주는 메인 페이지 파일입니다.
+ */
+
 import React from 'react'
 import Banner from '../../components/Banner'
 import Category from '../../components/Category'

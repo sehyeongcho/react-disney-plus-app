@@ -1,3 +1,7 @@
+/**
+ * 메인 페이지에서 사용되는 영화 이미지 배너를 생성하는 파일입니다. 현재 상영 중인 영화를 기준으로 합니다.
+ */
+
 import axios from '../api/axios'
 import React, { useEffect, useState } from 'react'
 import requests from '../api/request'
