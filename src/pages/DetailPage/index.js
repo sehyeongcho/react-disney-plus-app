@@ -33,7 +33,7 @@ const DetailPage = () => {
       />
       <div className="detail-contents">
         <h1>{movie.title}</h1>
-        <p>평균 {movie.vote_average}점</p>
+        <p className="movie__vote-average">평균 {movie.vote_average}점</p>
         <p>{movie.release_date} 개봉</p>
         <p>{movie.runtime}분</p>
         <ul>
@@ -45,6 +45,7 @@ const DetailPage = () => {
             )
           })}
         </ul>
+        <p className="movie__overview">{movie.overview}</p>
       </div>
     </section>
   )
