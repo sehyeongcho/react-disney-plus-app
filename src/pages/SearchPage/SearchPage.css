@@ -7,7 +7,25 @@
   background-color: black;
   width: 100%;
   text-align: center;
-  padding: 5rem 0;
+  position: absolute;
+  top: 72px;
+  height: calc(100vh - 72px);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.search-container::-webkit-scrollbar {
+  width: 5px;
+}
+  
+.search-container::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: rgb(186, 186, 193);
+  border-radius: 10px;
+}
+  
+.search-container::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);
 }
 
 .no-results {

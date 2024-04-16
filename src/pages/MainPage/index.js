@@ -31,6 +31,9 @@ const Container = styled.main`
   display: block;
   top: 72px;
   padding: 0 calc(3.5vw + 5px);
+  overflow-y: auto;
+  height: calc(100vh - 72px);
+  scrollbar-gutter: stable;
 
   &::after {
     background: url("/images/home-background.png") center center / cover no-repeat fixed;
@@ -39,5 +42,19 @@ const Container = styled.main`
     inset: 0px;
     opacity: 1;
     z-index: -1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+    
+  &::-webkit-scrollbar-thumb {
+    height: 30%;
+    background: rgb(186, 186, 193);
+    border-radius: 10px;
+  }
+    
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);
   }
 `
