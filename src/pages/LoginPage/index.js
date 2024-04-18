@@ -11,7 +11,7 @@ const LoginPage = () => {
       <Content>
         <Center>
           <LogoOne src="/images/cta-logo-one.svg" alt="" />
-          <SignUpLink>지금 가입</SignUpLink>
+          <SignUpLink href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=ko&passive=true&ifkv=ARZ0qKJi7RFINrsiPI-vSbKDcTffDAEEv0nkeduxjbsaY-QgP0cg1FCI9DApo2DLRJareUSYdJTZ&theme=mn&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">지금 가입</SignUpLink>
           <Description>
             영화에 대한 프리미어 액세스를 얻으십시오.
             디즈니 플러스 가격은 다음 주부터 1000원 인상됩니다.
@@ -74,6 +74,7 @@ const SignUpLink = styled.a`
   padding: 16.5px 0;
   border: 1px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
 
   &:hover {
     background-color: #0483ee;
