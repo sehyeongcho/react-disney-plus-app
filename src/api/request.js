@@ -1,3 +1,7 @@
+/**
+ * 다양한 기준에 부합한 영화 데이터를 가져오기 위해 엔드포인트를 직관적으로 정의한 파일입니다.
+ */
+
 const requests = {
   fetchNowPlaying: "movie/now_playing",
   fetchTrending: "trending/all/week",

@@ -1,3 +1,7 @@
+/**
+ * 로그인 페이지 파일입니다. 이 앱에서는 Firebase에서 제공하는 Google 인증 시스템을 사용하기 때문에, `지금 가입` 버튼을 클릭하면 `Google 계정 만들기` 페이지로 이동합니다.
+ */
+
 import React from 'react'
 import styled from 'styled-components'
 

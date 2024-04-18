@@ -1,3 +1,8 @@
+/**
+ * Firebase의 다양한 기능(auth, database, storage 등) 중 auth 기능만 사용합니다.
+ * API 키가 일반적으로 사용되는 방식과 달리 Firebase 서비스용 API 키는 백엔드 리소스에 대한 액세스를 제어하는 데 사용되지 않습니다. (https://firebase.google.com/docs/projects/api-keys?hl=ko#api-keys-for-firebase-are-different)
+ */
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import "firebase/auth";

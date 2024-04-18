@@ -41,13 +41,13 @@ const Nav = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-  
+
     // 컴포넌트를 사용하지 않게 되면 등록된 이벤트 리스너를 제거합니다.
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
-  
+
   const handleChange = (e) => {
     setSearchValue(e.target.value)
     navigate(`/search?q=${e.target.value}`)
@@ -80,7 +80,7 @@ const Nav = () => {
   return (
     <NavWrapper show={show}>
       <Logo>
-        <img 
+        <img
           alt="Disney Plus Logo"
           src="/images/logo.svg"
           onClick={() => (window.location.href = "/")}
@@ -91,7 +91,7 @@ const Nav = () => {
         <Login onClick={handleAuth}>Login</Login>
       ) : (
         <>
-          <Input          
+          <Input
             value={searchValue}
             onChange={handleChange}
             className="nav__input"

@@ -9,6 +9,7 @@
     position: relative;
     height: 600px;
   }
+
   .banner--fadeBottom {
     position: absolute;
     bottom: 0;
@@ -23,17 +24,21 @@
     padding-left: 2.3rem;
     margin-left: 0px !important;
   }
+
   .banner__description {
     font-size: 0.8rem !important;
     width: auto !important;
   }
+
   .info {
     text-align: start;
     padding-right: 1.2rem;
   }
+
   .space {
     margin-left: 6px;
   }
+
   .banner_bottom {
     font-size: 0.8rem !important;
     border-radius: 4px !important;
@@ -64,12 +69,10 @@
 
 .banner--fadeBottom {
   height: 7.4rem;
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    rgba(37, 37, 37, 0.61),
-    #111
-  );
+  background-image: linear-gradient(180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111);
 }
 
 .banner__buttons {

@@ -36,7 +36,7 @@ const Row = ({ title, id, fetchUrl }) => {
     setModalOpen(true)
     setMovieSelected(movie)
   }
-  
+
   return (
     <Container>
       <h2>{title}</h2>
