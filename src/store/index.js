@@ -21,10 +21,10 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: getDefaultMiddleware => getDefaultMiddleware({ 
+  middleware: getDefaultMiddleware => getDefaultMiddleware({
     serializableCheck: {
       ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
-    } 
+    }
   })
 })
 // getDefaultMiddleware: 리덕스 툴킷에서 가지고 있는 기본 미들웨어

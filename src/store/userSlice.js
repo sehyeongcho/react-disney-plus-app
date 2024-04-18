@@ -1,3 +1,7 @@
+/**
+ * 접속 중인 유저 정보는 앱 전체에서 접근 가능해야 하므로 Redux 상태 관리 라이브러리를 사용하여 저장합니다.
+ */
+
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
