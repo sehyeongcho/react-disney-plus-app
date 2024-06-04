@@ -19,3 +19,6 @@ Disney+ 웹 사이트 클론을 통해 아래 내용을 수행해 보면서 이�
 - CSS
 - JavaScript
 - React
+
+## 학습 내용
+[react-disney-plus-app wiki](https://github.com/sehyeongcho/react-disney-plus-app/wiki)
